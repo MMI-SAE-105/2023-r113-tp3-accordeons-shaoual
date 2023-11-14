@@ -8,5 +8,39 @@
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
+      
+      <div>
+        <selection>
+          <!---<button @click="openSection = !openSection">bouton 1</button>-->
+      
+          <div class="accordeon">
+            <section x-data="{ openSection: false }">
+              <button @click="openSection = !openSection">bouton 1</button>
+              <p x-show="openSection" x-transition.scale.80>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore expedita id nesciunt enim, cupiditate
+                ut sapiente harum placeat nulla mollitia soluta laboriosam eum adipisci non quam, a sint quo!
+              </p>
+            </section>
+            <section>
+              <button @click="openSection = !openSection">bouton 2</button>
+              <p x-show="openSection" x-transition.scale.80>
+                Veniam veritatis autem nostrum distinctio ipsum maxime itaque cum laudantium voluptas quasi molestias,
+                cupiditate, voluptatum perferendis placeat dolorum amet qui inventore facere. Vitae, quidem. At nostrum ut
+                nulla numquam cupiditate.
+              </p>
+            </section>
+            <section>
+              <button @click="openSection = !openSection">bouton 3</button>
+              <p x-show="openSection" x-transition.scale.80>
+                eatae adipisci velit mollitia est ut sunt consequuntur? Quia eveniet cupiditate dolor illum, iusto hic
+                incidunt rem dolorem minus exercitationem voluptas accusamus temporibus similique non, distinctio eligendi
+                ab consequuntur beatae?
+              </p>
+            </section>
+      
+      
+      
+        </selection>
+      </div>
   </body>
 </html>
