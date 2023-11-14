@@ -14,8 +14,11 @@
       <div class="accordeon">
     
       <section>
-        <button> </button>
-          <p></p>
+        <button @click="openSection = !openSection">bouton 1 </button>
+          <p x-show="openSection" x-transition.scale.80>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore expedita id nesciunt enim, cupiditate
+          ut sapiente harum placeat nulla mollitia soluta laboriosam eum adipisci non quam, a sint quo!
+          </p>
        
       </section>
       <section>
