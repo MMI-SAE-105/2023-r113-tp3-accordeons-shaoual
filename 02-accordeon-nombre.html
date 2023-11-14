@@ -14,21 +14,24 @@
       <div class="accordeon">
     
       <section>
-        <button @click="openSection = !openSection">bouton 1 </button>
-          <p x-show="openSection" x-transition.scale.80>
+        <button @click="openSection = 1">bouton 1 </button>
+          <p x-show="openSection === 1" x-transition.scale.80>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore expedita id nesciunt enim, cupiditate
           ut sapiente harum placeat nulla mollitia soluta laboriosam eum adipisci non quam, a sint quo!
           </p>
        
       </section>
       <section>
-        <button> </button>
-          <p></p>
+        <button @click="openSection = 2"> bouton 2 </button>
+          <p x-show="openSection === 2" x-transition.scale.80>
+          </p>
         
       </section>
       <section>
-        <button> </button>
-          <p></p>
+        <button @click="openSection = 3"> bouton 3</button>
+          <p x-show="openSection === 3" x-transition.scale.80>
+          
+          </p>
         
       </section>
 
