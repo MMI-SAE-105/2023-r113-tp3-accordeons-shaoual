@@ -23,7 +23,8 @@
                 ut sapiente harum placeat nulla mollitia soluta laboriosam eum adipisci non quam, a sint quo!
               </p>
             </section>
-            <section>
+
+            <section x-data="{ openSection: false }">
               <button @click="openSection = !openSection">bouton 2</button>
               <p x-show="openSection" x-transition.scale.80>
                 Veniam veritatis autem nostrum distinctio ipsum maxime itaque cum laudantium voluptas quasi molestias,
@@ -31,7 +32,8 @@
                 nulla numquam cupiditate.
               </p>
             </section>
-            <section>
+
+            <section x-data="{ openSection: false }">
               <button @click="openSection = !openSection">bouton 3</button>
               <p x-show="openSection" x-transition.scale.80>
                 eatae adipisci velit mollitia est ut sunt consequuntur? Quia eveniet cupiditate dolor illum, iusto hic
