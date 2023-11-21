@@ -7,7 +7,6 @@
   border-radius: 0;
   display: flex;
   padding: 1px;
-  width: 150px;
 }
 
 #accordeon li {
@@ -19,7 +18,7 @@
   /* pour espacer les éléments, marge de 3px */
   /* pour espacer le contenu, padding de 5px */
   /* pour arrondir les bords de 5px */
-  widh: 107px;
+  width: 107px;
   overflow: hidden;
   transition: width 0.3s;
   background-color: #eee;
@@ -38,6 +37,9 @@
   /* pour éviter les marges par défaut */
   /* pour que les éléments soient alignés horizontalement */
   /* largeur de l'élément intrérieur de 317px (= déplié) */
+  margin: 0;
+  display: flex;
+  width: 317px;
 }
 
 #accordeon li figure figcaption {
@@ -46,10 +48,17 @@
   /* pour que les éléments soient alignés verticalement */
 
   /* espace entre les éléments */
+  width: 200px; /* largeur du texte */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Sur tous les enfants de figcation */
 #accordeon li figure figcaption > * {
   /* pour éviter les marges par défaut */
   /* pour éviter les "padding" par défaut */
+  margin: 0;
+  padding: 0;
 }

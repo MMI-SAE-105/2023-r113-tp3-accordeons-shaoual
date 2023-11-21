@@ -10,8 +10,8 @@
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
-    <ul id="accordeon">
-      <li id="actif">
+    <ul id="accordeon"  x-data="{ isOpen: 0 }">
+      <li :class="{ 'actif': isOpen === 1 }" @click="isOpen = !isOpen" >
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -20,7 +20,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li  :class="{ 'actif': isOpen === 2 }">  <!--change ca en mettant "click openSection = 1"-->
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -29,7 +29,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{ 'actif': isOpen === 3 }">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
